@@ -1,0 +1,114 @@
+html {
+  background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/retina_wood.png');
+  
+  font-family: Arial, Open Sans;
+  
+  user-select: none;
+  cursor: default;
+}
+
+/* BUTTONS */
+.button {
+  border: 100px solid black;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  cursor: pointer;
+}
+.button.highlight#green{
+  border-color: #06bb06;
+}
+.button.highlight#red{
+  border-color: #ff4444;
+}
+.button.highlight#yellow{
+  border-color: #ffff44;
+}
+.button.highlight#blue{
+  border-color: #2222ff;
+}
+#green {
+  border-color: green;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 9999px;
+}
+#red {
+  border-color: red;
+  border-left: none;
+  border-bottom: none;
+  border-top-right-radius: 9999px;
+}
+#yellow {
+  border-color: yellow;
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius: 9999px;
+}
+#blue {
+  border-color: blue;
+  border-top: none;
+  border-left: none;
+  border-bottom-right-radius: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#wrapper {
+  background-color: #333;
+  padding: 20px;
+  width: 585px;
+  border-radius: 100%;
+}
+
+#buttonBlocker { /* Blocks the hitbox of the .button */
+  /*background-color: gold; */ /*debug option*/
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 146px;
+  left: 146px;
+  border-radius: 100%;
+}
+
+/* SWITCH */
+#switchWrapper {
+  margin-top: 150px;
+}
+#switchWrapper label {
+  margin: 0 10px;
+}
+#switch {
+  background-color: #2a2a2a;
+  width: 50px;
+  height: 20px;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+#switch #innerSwitch {
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  background-color: #8181ff;
+  margin-right: 28px;
+}
+#switch #innerSwitch.enabled {
+  margin-left: 30px;
+}
+
+/* DISPLAY */
+#display {
+  margin-top: 70px;
+  background-color: #1a1a1a;
+  width: 100px;
+  height: 60px;
+  border: 1px solid black;
+  color: red;
+  font-size: 26pt;
+  line-height: 60px;
+}
+#display.enabled {
+  background-color: #1d1d1d;
+}
